@@ -1,12 +1,14 @@
 package com.amelia.codes.ProductService.infrastructure.controller;
 import com.amelia.codes.ProductService.application.dto.ProductDto;
-import com.amelia.codes.ProductService.application.dto.service.ProductService;
+import com.amelia.codes.ProductService.application.service.ProductService;
 
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@RestController
+@RequestMapping("/api/products")
 public class ProductController {
     private final ProductService productService;
 
