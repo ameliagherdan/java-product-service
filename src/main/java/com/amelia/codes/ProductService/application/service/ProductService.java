@@ -1,5 +1,6 @@
 package com.amelia.codes.ProductService.application.service;
 
+import com.amelia.codes.ProductService.application.dto.ProductCreateDto;
 import com.amelia.codes.ProductService.application.dto.ProductDto;
 import com.amelia.codes.ProductService.domain.model.Product;
 import com.amelia.codes.ProductService.domain.port.ProductRepositoryPort;
@@ -7,8 +8,10 @@ import com.amelia.codes.ProductService.domain.port.ProductRepositoryPort;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class ProductService {
@@ -26,7 +29,8 @@ public class ProductService {
                 .toList();
     }
 
-    public ProductDto save(ProductDto dto) {
+    @Transactional
+    public ProductDto save(ProductCreateDto dto) {
         logger.info("Saving product: {}", dto);
         Product product = new Product();
         product.setName(dto.name());
@@ -37,7 +41,8 @@ public class ProductService {
         return new ProductDto(saved.getId(), saved.getName(), saved.getPrice());
     }
 
-    public void delete(Long id) {
+    @Transactional
+    public void delete(UUID id) {
         logger.warn("Deleting product with ID: {}", id);
         repo.deleteById(id);
     }

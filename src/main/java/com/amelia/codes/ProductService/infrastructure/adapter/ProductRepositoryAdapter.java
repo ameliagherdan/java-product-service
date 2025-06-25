@@ -6,6 +6,7 @@ import com.amelia.codes.ProductService.infrastructure.repository.ProductReposito
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.UUID;
 
 @Component
 public class ProductRepositoryAdapter implements ProductRepositoryPort {
@@ -27,7 +28,7 @@ public class ProductRepositoryAdapter implements ProductRepositoryPort {
     }
 
     @Override
-    public void deleteById(Long id) {
+    public void deleteById(UUID id) {
         jpaRepo.deleteById(id);
     }
 }
