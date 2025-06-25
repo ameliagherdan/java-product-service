@@ -1,8 +1,8 @@
-package com.amelia.codes.productservice.application.dto.service;
+package com.amelia.codes.ProductService.application.dto.service;
 
-import com.amelia.codes.productservice.application.dto.ProductDto;
-import com.amelia.codes.productservice.domain.model.Product;
-import com.amelia.codes.productservice.infrastructure.repository.ProductRepository;
+import com.amelia.codes.ProductService.application.dto.ProductDto;
+import com.amelia.codes.ProductService.domain.model.Product;
+import com.amelia.codes.ProductService.infrastructure.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

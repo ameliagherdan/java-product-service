@@ -1,4 +1,4 @@
-package com.amelia.codes.productservice.domain.model;
+package com.amelia.codes.ProductService.domain.model;
 
 import java.util.UUID;
 

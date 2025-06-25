@@ -1,6 +1,6 @@
-package com.amelia.codes.productservice.infrastructure.controller;
-import com.amelia.codes.productservice.application.dto.ProductDto;
-import com.amelia.codes.productservice.application.dto.service.ProductService;
+package com.amelia.codes.ProductService.infrastructure.controller;
+import com.amelia.codes.ProductService.application.dto.ProductDto;
+import com.amelia.codes.ProductService.application.dto.service.ProductService;
 
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;

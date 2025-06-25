@@ -1,4 +1,4 @@
-package com.amelia.codes.productservice;
+package com.amelia.codes.ProductService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

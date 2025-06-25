@@ -1,4 +1,4 @@
-package com.amelia.codes.productservice.application.dto;
+package com.amelia.codes.ProductService.application.dto;
 
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
